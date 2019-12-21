@@ -7,6 +7,20 @@ TypeScript based stack for testing & production with the following features:
 - Instant reload in debug mode
 - ESLint & Prettier support for Visual Studio Code out of the box
 
+## 🎬 Getting Started
+
+```yarn start```
+
+Execute source code with nodemon for live reloading of code changes.
+
+```yarn test```
+
+Run all *.test.ts files in test/ directory.
+
+```yarn build```
+
+Export app to prod/app.ts after running tsc & rollup.
+
 ## 🍔 Tech Stack
 
 - TypeScript
