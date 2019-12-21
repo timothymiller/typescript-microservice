@@ -9,7 +9,8 @@
   "scripts": {
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
     "test": "mocha --reporter spec --compilers ts:ts-node/register 'test/**/*.test.ts'",
-    "build": "tsc -p . && rollup -c"
+    "build": "tsc -p . && rollup -c",
+    "deploy": "docker build -t typescript-app ."
   },
   "dependencies": {},
   "devDependencies": {

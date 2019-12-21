@@ -21,6 +21,10 @@ Run all *.test.ts files in test/ directory.
 
 Export app to prod/app.ts after running tsc & rollup.
 
+```yarn deploy```
+
+Creates a minimal Docker image based on the output from yarn build
+
 ## 🍔 Tech Stack
 
 - TypeScript
@@ -33,7 +37,7 @@ Export app to prod/app.ts after running tsc & rollup.
 
 ## 🔩 Code Quality
 
-- ESLint - AirBnB JavaScript Style Guide
+- ESLint - Airbnb JavaScript Style Guide
 - Rollup - CJS by default
 
 ## 🏃 Runtime
