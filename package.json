@@ -11,8 +11,7 @@
     "test": "mocha --reporter spec --compilers ts:ts-node/register 'test/**/*.test.ts'",
     "build": "tsc -p . && rollup -c"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-strip": "^1.3.1",
     "@types/chai": "^4.2.6",
