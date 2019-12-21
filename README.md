@@ -1,4 +1,4 @@
-# Dockerized TypeScript App Template
+# 🐬 Dockerized TypeScript App Template
 
 TypeScript based stack for testing & production with the following features:
 
