@@ -1,13 +1,20 @@
-FROM node:alpine
+FROM node:14-alpine AS builder
+# Copy source code to Docker build environment
+COPY . /compile
+WORKDIR /compile
 
+# Compile steps
+# 1. Install dependencies
+RUN yarn
+# 2. Build for production
+RUN yarn build
+# 3. Install process manager
+# RUN npm install pm2 -g
+
+FROM node:14-alpine
+WORKDIR /prod
 # Copy source code to Docker environment
-COPY . .
-
-# Install dependencies
-RUN npm install
-
-# Build for production
-RUN npm run build
+COPY --from=builder /compile/prod .
 
 # Install process manager
 RUN npm install pm2 -g
@@ -17,3 +24,4 @@ RUN npm install pm2 -g
 
 # Execute
 CMD ["pm2-runtime","prod/app.js"]
+

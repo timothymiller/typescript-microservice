@@ -1,0 +1,19 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": true,
+    "yarn.lock": true,
+    "LICENSE": true,
+    ".dockerignore": true,
+    ".eslintrc.js": true,
+    ".gitignore": true,
+    ".vscode": true,
+    ".github/*.*": true,
+    ".github": true
+  },
+  "explorerExclude.backup": null
+}

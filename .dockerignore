@@ -1,6 +1,23 @@
+# Paths to exclude from Dockerfile production build
+
+# Platform of host may not match platform for docker container. Exclude local node modules.
 node_modules
-npm-debug.log
-yarn.lock
+
+# Git history
+.git
+
+# Github bloat
 .github
 .gitignore
 README.md
+
+# Docker build files
+*Dockerfile*
+*docker-compose*
+
+# NPM/Yarn error files
+npm-debug.log
+yarn.lock
+
+# VS Code (IDE) config
+.vscode
