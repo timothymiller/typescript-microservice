@@ -10,7 +10,7 @@
     "LICENSE": true,
     ".dockerignore": true,
     ".eslintrc.js": true,
-    ".gitignore": true,
+    ".gitignore": false,
     ".vscode": true,
     ".github/*.*": true,
     ".github": true,
