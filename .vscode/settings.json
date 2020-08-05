@@ -13,7 +13,13 @@
     ".gitignore": true,
     ".vscode": true,
     ".github/*.*": true,
-    ".github": true
+    ".github": true,
+    "rollup.config.js": true,
+    "tsconfig.json": true,
+    "build": true,
+    "prod": true,
+    "package-lock.json": true,
+    "Dockerfile": true
   },
   "explorerExclude.backup": null
 }
