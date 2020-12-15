@@ -48,3 +48,6 @@ prod/
 
 # Intermediate folders
 build/
+
+# Stats
+stats.html

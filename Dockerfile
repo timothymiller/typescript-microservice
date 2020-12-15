@@ -1,5 +1,5 @@
 # ---- Base Node ----
-FROM node:14-alpine AS base
+FROM node:lts-alpine AS base
 
 #
 # ---- Dependencies ----
