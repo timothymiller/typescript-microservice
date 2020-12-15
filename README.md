@@ -52,14 +52,14 @@ If you wanted to extend this template to create an API server, you would do so i
 
 ```docker run -p <public_port>:<private_port> -d <image>```
 
-## :police_car: License
+## License
 
-This project is licensed under the GNU General Public License, version 3 (GPLv3) and is distributed free of charge.
+This Template is licensed under the GNU General Public License, version 3 (GPLv3).
 
-## 👨‍💻 Contributors
+## Author
 
 Timothy Miller
 
-- GitHub: <https://github.com/timothymiller> 💡
-- Website: <https://timknowsbest.com> 💻
-- Donation: <https://timknowsbest.com/donate> 💸
+[View my GitHub profile 💡](https://github.com/timothymiller)
+
+[View my personal website 💻](https://timknowsbest.com)
