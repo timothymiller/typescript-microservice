@@ -1,4 +1,4 @@
-# 🐬 TypeScript Microservice Template
+# 🐬 TypeScript Microservice
 
 TypeScript Microservice starter project with batteries included.
 
