@@ -9,9 +9,12 @@
   "scripts": {
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
     "test": "mocha -r ts-node/register 'src/**/*.test.ts'",
-    "compile": "tsc -p . && rollup -c",
-    "build": "docker build -t timothyjmiller/typescript-app:latest .",
-    "build:all": "docker buildx build --platform linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/amd64 --tag timothyjmiller/typescript-app:latest ."
+    "build": "tsc -p . && rollup -c",
+    "docker:build": "docker build -t timothyjmiller/typescript-app:development .",
+    "docker:run": "docker run timothyjmiller/typescript-app:development",
+    "docker:publish": "docker build -t timothyjmiller/typescript-app:development .",
+    "docker:build:all": "docker buildx build --platform linux/ppc64le,linux/s390x,linux/386,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/amd64 --tag timothyjmiller/typescript-app:latest .",
+    "docker:publish:all": "docker buildx build --platform linux/ppc64le,linux/s390x,linux/386,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/amd64 --tag timothyjmiller/typescript-app:latest ."
   },
   "dependencies": {
   },
@@ -19,7 +22,7 @@
     "@rollup/plugin-strip": "^2.0.0",
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.2.0",
-    "@types/node": "^14.14.13",
+    "@types/node": "^14.14.14",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
     "chai": "^4.2.0",

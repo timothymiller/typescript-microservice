@@ -1,11 +1,31 @@
 # 🐬 TypeScript Microservice Template
 
-TypeScript based stack for testing & production with the following features:
+TypeScript Microservice starter project with batteries included.
 
+## 🔔 Features
+
+- Write code in ES6 TypeScript
+- ESLint & Prettier integration with VS Code extensions
+- Instant code reload in debug mode
+- JavaScript optimizations
+
+## 🔩 Code Quality
+
+- ESLint - Airbnb JavaScript Style Guide
+- Prettier - Format code on save
+
+## JavaScript Optimizations
+
+- [Rollup](https://www.npmjs.com/package/rollup)
 - Tree-shaking
-- Deploy to Docker
-- Instant reload in debug mode
-- ESLint & Prettier support for Visual Studio Code out of the box
+- Optimize ES modules for faster native loading
+- Removes `console.log` statements from docker builds
+- CommonJS module format
+
+## 🔨 Unit Testing
+
+- Mocha
+- Chai
 
 ## 🎬 Getting Started
 
@@ -21,45 +41,20 @@ Run all *.test.ts files in test/ directory.
 
 Export app to prod/app.ts after running tsc & rollup.
 
-```yarn deploy```
-
-Creates a minimal Docker image based on the output from yarn build
-
-## 🍔 Tech Stack
-
-- TypeScript
-- ES6
-
-## 🔨 Unit Testing
-
-- Mocha
-- Chai
-
-## 🔩 Code Quality
-
-- ESLint - Airbnb JavaScript Style Guide
-- Rollup - CJS by default
-
-## 🏃 Runtime
-
-- Docker
-- PM2
-- Node.js
-
 ## 🛥️ External Ports
 
 If you wanted to extend this template to create an API server, you would do so in your docker-compose file utilizing the output image from this template or when running from the command line like this:
 
 ```docker run -p <public_port>:<private_port> -d <image>```
 
-## :police_car: License
+## License
 
-This project is licensed under the GNU General Public License, version 3 (GPLv3) and is distributed free of charge.
+This Template is licensed under the GNU General Public License, version 3 (GPLv3).
 
-## 👨‍💻 Contributors
+## Author
 
 Timothy Miller
 
-- GitHub: <https://github.com/timothymiller> 💡
-- Website: <https://timknowsbest.com> 💻
-- Donation: <https://timknowsbest.com/donate> 💸
+[View my GitHub profile 💡](https://github.com/timothymiller)
+
+[View my personal website 💻](https://timknowsbest.com)
