@@ -4,7 +4,7 @@ TypeScript Microservice starter project with batteries included.
 
 ## 🔔 Features
 
-- Write code in ES6 TypeScript
+- Code in ES6 TypeScript
 - ESLint & Prettier integration with VS Code extensions
 - Instant code reload in debug mode
 - JavaScript optimizations
