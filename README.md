@@ -14,7 +14,7 @@ TypeScript Microservice starter project with batteries included.
 - ESLint - Airbnb JavaScript Style Guide
 - Prettier - Format code on save
 
-## JavaScript Optimizations
+## 💨 JavaScript Optimizations
 
 - [Rollup](https://www.npmjs.com/package/rollup)
 - Tree-shaking
