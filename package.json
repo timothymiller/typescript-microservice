@@ -1,10 +1,10 @@
 {
   "name": "typescript-microservice",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "app.ts",
   "repository": "https://github.com/timothymiller/dockerized-typescript-app-template.git",
   "author": "tim.miller@preparesoftware.com",
-  "license": "GPLv3",
+  "license": "GPL-3.0-with-autoconf-exception",
   "private": false,
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
